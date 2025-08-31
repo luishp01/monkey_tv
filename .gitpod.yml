@@ -1,0 +1,16 @@
+# Le dice a Gitpod que use una imagen de Docker que ya tiene Flutter instalado.
+image: gitpod/workspace-flutter
+
+# Tareas que se ejecutarán automáticamente cuando se inicie el espacio de trabajo.
+tasks:
+  - init: flutter doctor # Revisa que la instalación de Flutter esté correcta.
+    command: |
+      echo "¡Entorno de Flutter listo!"
+      echo "Ahora puedes ejecutar 'flutter create .' si es la primera vez,"
+      echo "o 'flutter run' para probar tu app."
+
+# Le dice a Gitpod qué puertos de red debe hacer visibles para ti.
+# Esto es crucial para poder ver tu aplicación web cuando la ejecutes.
+ports:
+  - port: 6000-8999
+    onOpen: ignore
