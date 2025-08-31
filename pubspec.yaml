@@ -28,7 +28,13 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
+  dependencies:
+  flutter:
     sdk: flutter
+  video_player: ^2.8.2
+  supabase_flutter: ^2.0.0 # <--- AÑADE ESTA LÍNEA EXACTAMENTE ASÍ}
+
+  
 
 
   # The following adds the Cupertino Icons font to your application.
